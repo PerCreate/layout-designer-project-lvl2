@@ -1,6 +1,8 @@
 @font-face {
     font-family: "Roboto";
+    src: url(../fonts/Roboto-Medium.ttf);
     src: url(../fonts/Roboto-Bold.ttf);
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 
 %flex-element-center {
@@ -41,7 +43,6 @@ h2 {
 
 header {
     width: 100%;
-    padding: 0 40px;
     background-image: url(../images/banner.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -169,7 +170,7 @@ header {
     }
 }
 
-@media (max-width:891px) {
+@media (max-width:975px) {
     header {
         nav {
             flex-wrap: wrap;
