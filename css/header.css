@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+header .page-description form, header .page-description, header nav .menu, header nav .logo, header nav, header, body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font: 18px/1.5 "Roboto", sans-serif;
+  background-color: #08020d;
+  color: #cacaca;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 4.85vw;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 3.1vw;
+  line-height: 57px;
+  text-transform: uppercase;
+}
+
+header {
+  width: 100%;
+  padding: 0 40px;
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+}
+header nav {
+  grid-gap: 15px 87px;
+  width: 100%;
+  height: 26px;
+  max-width: 1200px;
+  position: absolute;
+  top: 25px;
+}
+header nav .logo {
+  width: 100px;
+  flex-shrink: 0;
+}
+header nav .logo img {
+  width: 25px;
+  height: 25px;
+}
+header nav .logo span {
+  font-size: 11px;
+  line-height: 13px;
+}
+header nav .menu {
+  margin: 0;
+  grid-gap: 24px;
+  padding: 0;
+  justify-content: start;
+  flex: 1 1 90%;
+}
+header nav .menu li {
+  list-style-type: none;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+}
+header nav .menu li:hover {
+  cursor: pointer;
+}
+header nav input {
+  flex-shrink: 0;
+  width: 248px;
+  padding: 5px 10px;
+  height: 25px;
+  background: #3C3B3D;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+header .page-description {
+  margin: 200px 0;
+  flex-direction: column;
+}
+header .page-description h1, header .page-description h2 {
+  margin: 0;
+}
+header .page-description span {
+  margin-top: 30px;
+  font-weight: 100;
+  font-size: 1.29vw;
+  font-style: normal;
+  line-height: 150%;
+}
+header .page-description form {
+  flex-wrap: wrap;
+  margin-top: 16px;
+  width: 570px;
+}
+header .page-description form input {
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+  width: 273px;
+  height: 50px;
+  padding: 16px 22px;
+  background-color: transparent;
+  border: 2px solid #CACACA;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+header .page-description form input::-moz-placeholder {
+  color: #FFFFFF;
+}
+header .page-description form input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+header .page-description form input::placeholder {
+  color: #FFFFFF;
+}
+header .page-description form button {
+  box-sizing: border-box;
+  width: 570px;
+  height: 57px;
+  background: #34C176;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+@media (min-width: 1237px) {
+  header .page-description h1 {
+    font-size: 60px;
+  }
+  header .page-description h2 {
+    font-size: 38px;
+  }
+  header .page-description span {
+    font-size: 16px;
+  }
+}
+@media (max-width: 891px) {
+  header nav {
+    flex-wrap: wrap;
+  }
+  header nav .logo {
+    margin-left: 40px;
+  }
+  header nav .menu {
+    margin-right: 40px;
+    flex: 0 0 0;
+    width: 310px;
+  }
+  header nav form {
+    padding: 0 38px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  header nav form input {
+    width: 310px;
+  }
+  header .page-description span {
+    text-align: center;
+    display: block;
+    width: 374px;
+    height: 49px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 618px) {
+  header nav {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    grid-gap: 30px;
+    flex-wrap: wrap;
+  }
+  header nav .logo {
+    margin-left: 60px;
+  }
+  header nav .menu {
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0 60px;
+    margin-right: 0;
+    flex: 1 0 0;
+    width: 450px;
+  }
+  header nav form {
+    padding: 0 60px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  header nav form input {
+    width: 100%;
+  }
+  header .page-description h1 {
+    font-size: 30px;
+  }
+  header .page-description h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 414px) {
+  header {
+    box-sizing: border-box;
+    width: 414px;
+  }
+  header nav {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    grid-gap: 18px;
+    flex-wrap: wrap;
+  }
+  header nav .logo {
+    margin-left: 20px;
+  }
+  header nav .menu {
+    padding: 0 20px;
+    flex: 1 0 100%;
+    display: block;
+  }
+  header nav .menu li {
+    line-height: 17px;
+  }
+  header nav form {
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  header nav form input {
+    width: 374px;
+  }
+  header .page-description h1 {
+    text-align: center;
+    display: block;
+    width: 374px;
+    height: 90px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  header .page-description h2 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  header .page-description form {
+    width: 374px;
+    flex-wrap: wrap;
+  }
+  header .page-description form input {
+    width: 100%;
+  }
+  header .page-description form input::-moz-placeholder {
+    color: #FFFFFF;
+  }
+  header .page-description form input:-ms-input-placeholder {
+    color: #FFFFFF;
+  }
+  header .page-description form input::placeholder {
+    color: #FFFFFF;
+  }
+  header .page-description form button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=header.css.map */
