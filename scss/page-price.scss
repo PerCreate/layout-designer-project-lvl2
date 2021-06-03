@@ -150,9 +150,34 @@ main {
                 transform: scale(1.1);
             }
         }
+        .footer {
+            width: 574px;
+        }
     }
 }
 }
+
+
+@media (max-width:618px){
+    main {
+        .page-price {
+            box-sizing: border-box;
+            padding: 0 60px;
+            overflow: hidden;
+            .cards {
+                width: fit-content;
+                grid-gap: 0 50px;
+                transition: all 0ms ease 0s;
+                transform: translate3d(420px, 0, 0);
+            }
+            
+            .footer {
+                width: 100%;
+            }
+        }
+    }
+}
+
 
 @media (max-width: 414px) {
     main {

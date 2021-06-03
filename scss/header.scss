@@ -46,6 +46,7 @@ header {
     background-image: url(../images/banner.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     flex-direction: column;
     @extend %flex-element-space-between;
 
@@ -240,31 +241,56 @@ header {
         }
 
         .page-description {
+            box-sizing: border-box;
+            padding: 0 60px 0 60px;
+            width: 100%;
+            
             h1 {
+                text-align: center;
+                display: block;
+                width: 100%;
                 font-size: 30px;
+                line-height: 55px;
             }
             h2 {
                 font-size: 18px;
+            }
+
+            form {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                }
             }
         }
     }
 }
 
 @media (max-width:414px) {
+    html {
+        width: 414px;
+    }
+    body {
+        box-sizing: border-box;
+        width: 414px;
+    }
     header {
         box-sizing:border-box;
-        width: 414px;
+        width: 100%;
 
         nav {
+            width: 374px;
             height: fit-content;
             grid-gap: 18px;
+            -webkit-grid-gap: 18px;
             flex-wrap: wrap;
 
             .logo {
-                margin-left: 20px;
+                margin-left: 0;
             }
             .menu {
-                padding: 0 20px;
+                padding: 0;
                 flex: 1 0 100%;
                 display: block;
 
@@ -274,13 +300,13 @@ header {
             }
 
             form {
-                padding: 0 20px;
+                padding: 0;
                 width: 100%;
                 display: flex;
-                justify-content: flex-end;
+                justify-content: flex-start;
 
                 input {
-                    width: 374px;
+                    width: 100%;
                 }
             }
         }
@@ -288,8 +314,6 @@ header {
         .page-description {
 
             h1 {
-                text-align: center;
-                display: block;
                 width: 374px;
                 height: 90px;
                 font-size: 30px;
@@ -304,13 +328,6 @@ header {
             form {
                 width: 374px;
                 flex-wrap: wrap;
-
-                input {
-                    width: 100%;
-                }
-                input::placeholder {
-                    color: #FFFFFF;
-                }
 
                 button {
                     width: 100%;

@@ -123,6 +123,27 @@ main .page-price .footer {
   main .page-price .cards .arrow:hover {
     transform: scale(1.1);
   }
+  main .page-price .footer {
+    width: 574px;
+  }
+}
+@media (max-width: 618px) {
+  main .page-price {
+    box-sizing: border-box;
+    padding: 0 60px;
+    overflow: hidden;
+  }
+  main .page-price .cards {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    grid-gap: 0 50px;
+    transition: all 0ms ease 0s;
+    transform: translate3d(420px, 0, 0);
+  }
+  main .page-price .footer {
+    width: 100%;
+  }
 }
 @media (max-width: 414px) {
   main .page-price h2 {

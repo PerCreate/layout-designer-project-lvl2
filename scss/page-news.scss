@@ -145,6 +145,26 @@ main {
     }
 }
 
+@media (max-width:618px){
+    main {
+        .page-news {
+            margin-top: 100px;
+            box-sizing: border-box;
+            padding: 0 60px;
+            .news-item {
+                width: 100%;
+    
+                img {
+                    width: 100%;
+                }
+                .text {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 414px) {
     main {
         .page-news {
@@ -154,6 +174,12 @@ main {
             h2 {
                 font-size: 18px;
                 line-height: 27px;
+            }
+            .cards {
+                width: fit-content;
+                grid-gap: 0 26px;
+                transition: none;
+                transform: none;
             }
             .news-item {
                 img {

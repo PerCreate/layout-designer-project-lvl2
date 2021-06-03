@@ -38,6 +38,7 @@ header {
   background-image: url(../images/banner.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   flex-direction: column;
 }
 header nav {
@@ -203,30 +204,56 @@ header .page-description form button {
   header nav form input {
     width: 100%;
   }
+  header .page-description {
+    box-sizing: border-box;
+    padding: 0 60px 0 60px;
+    width: 100%;
+  }
   header .page-description h1 {
+    text-align: center;
+    display: block;
+    width: 100%;
     font-size: 30px;
+    line-height: 55px;
   }
   header .page-description h2 {
     font-size: 18px;
   }
+  header .page-description form {
+    width: 100%;
+  }
+  header .page-description form input {
+    width: 100%;
+  }
 }
 @media (max-width: 414px) {
-  header {
+  html {
+    width: 414px;
+  }
+
+  body {
     box-sizing: border-box;
     width: 414px;
   }
+
+  header {
+    box-sizing: border-box;
+    width: 100%;
+  }
   header nav {
+    width: 374px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     grid-gap: 18px;
+    -webkit-grid-gap: 18px;
     flex-wrap: wrap;
   }
   header nav .logo {
-    margin-left: 20px;
+    margin-left: 0;
   }
   header nav .menu {
-    padding: 0 20px;
+    padding: 0;
     flex: 1 0 100%;
     display: block;
   }
@@ -234,17 +261,15 @@ header .page-description form button {
     line-height: 17px;
   }
   header nav form {
-    padding: 0 20px;
+    padding: 0;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
   header nav form input {
-    width: 374px;
+    width: 100%;
   }
   header .page-description h1 {
-    text-align: center;
-    display: block;
     width: 374px;
     height: 90px;
     font-size: 30px;
@@ -257,18 +282,6 @@ header .page-description form button {
   header .page-description form {
     width: 374px;
     flex-wrap: wrap;
-  }
-  header .page-description form input {
-    width: 100%;
-  }
-  header .page-description form input::-moz-placeholder {
-    color: #FFFFFF;
-  }
-  header .page-description form input:-ms-input-placeholder {
-    color: #FFFFFF;
-  }
-  header .page-description form input::placeholder {
-    color: #FFFFFF;
   }
   header .page-description form button {
     width: 100%;
