@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Medium.ttf);
+    src: url(../fonts/Roboto-Bold.ttf);
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+%flex-element-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+%flex-element-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-image: url(../images/MortenHarket.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    @extend %flex-element-space-between;
+    h1 {
+        font-weight: bold;
+        font-size: 4.85vw;
+        line-height: 90px;
+        text-transform: uppercase;
+    }
+    
+    h2 {
+        font-weight: bold;
+        font-size: 3.1vw;;
+        line-height: 57px;
+        text-transform: uppercase;
+    }
+    .page-description {
+        padding: 0 0 223px;
+        width: 100%;
+        max-width: 1200px;
+        margin-top: 235px;
+        h1 {
+            margin: 0 0 16px 0;
+        }
+        span {
+            font-size: 16px;
+            line-height: 150%;
+        }
+        form {
+            margin-top: 48px;
+            display: flex;
+            grid-gap: 0 24px;
+            width: max-content;
+            button {
+                padding: 20px 30px;
+                width: 200px;
+                height: 62px;
+                display: flex;
+                align-items: center;
+                grid-gap: 0 22px;
+                border-radius: 5px;
+                font-size: 12.8px;
+                line-height: 150%;
+                color: #FFFFFF;
+                .icon {
+                    width: 20px;
+                    height: 20px;
+                }
+                .player {
+                    background-image: url(../images/play-button.svg);
+                }
+                .heart {
+                    background-image: url(../images/heart.svg);
+                }
+            }
+            .mix{
+                background: #5328A1;
+            }
+            .favorities{
+                background: #95390C;
+            }
+        }
+    }
+}
+
+@media (min-width:1237px) {
+    header {
+        .page-description {
+            h1 {
+                font-size: 60px;
+            }
+        }
+    }
+}
+
+@media (max-width:975px) {
+    header {
+        .page-description {
+            box-sizing: border-box;
+            padding: 0 40px 223px;
+            h1 {
+                font-size: 47px;
+            }
+        }
+    }
+}
+
+@media (max-width:474px) {
+    header {
+        .page-description {
+            form {
+                width: 100%;
+                flex-wrap: wrap;
+                grid-gap: 24px;
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (max-width:414px) {
+    html {
+        width: 414px;
+    }
+    body {
+        box-sizing: border-box;
+        width: 414px;
+    }
+    header {
+        box-sizing:border-box;
+        width: 100%; 
+        .page-description {
+            margin-top: 225px;
+            padding: 0 20px 224px;
+            h1 {
+                font-size: 30px;
+                line-height: 45px;
+            }
+            form {
+                button {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+main .popular-tracks .tracks-container .column .track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .popular-tracks .tracks-container .column, main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+}
+main .popular-tracks {
+  padding: 100px 0 0 0;
+  width: 100%;
+  max-width: 1200px;
+}
+main .popular-tracks h3 {
+  margin: 0;
+  font-size: 38px;
+  line-height: 57px;
+  text-transform: uppercase;
+}
+main .popular-tracks .tracks-container {
+  margin-top: 48px;
+  grid-gap: 25px 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .popular-tracks .tracks-container .column {
+  width: 550px;
+  align-items: flex-start;
+  grid-gap: 25px;
+}
+main .popular-tracks .tracks-container .column .track {
+  width: 100%;
+}
+main .popular-tracks .tracks-container .column .track .icon-and-name img {
+  margin-right: 15px;
+  width: 55px;
+  height: 55px;
+  float: left;
+}
+main .popular-tracks .tracks-container .column .track .icon-and-name span {
+  display: inline-block;
+}
+main .popular-tracks .tracks-container .column .track .icon-and-name .author {
+  width: 70%;
+}
+
+@media (max-width: 414px) {
+  main {
+    width: 100%;
+  }
+  main .popular-tracks {
+    box-sizing: border-box;
+    padding: 100px 20px;
+  }
+  main .popular-tracks h3 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}/*# sourceMappingURL=artist-popular-tracks.css.map */

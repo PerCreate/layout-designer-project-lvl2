@@ -1,0 +1,47 @@
+main .discography {
+  padding: 100px 0 0;
+  width: 100%;
+  max-width: 1200px;
+}
+main .discography h3 {
+  margin: 0 0 48px;
+  font-size: 38px;
+  line-height: 57px;
+  text-transform: uppercase;
+}
+main .discography .disks-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 25px 50px;
+}
+main .discography .disks-container .disk {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media (max-width: 414px) {
+  main .discography {
+    box-sizing: border-box;
+    padding: 100px 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  main .discography h3 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  main .discography .disks-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 25px 50px;
+  }
+  main .discography .disks-container .disk {
+    width: 137px;
+  }
+  main .discography .disks-container .disk img {
+    width: 137px;
+  }
+}/*# sourceMappingURL=atist.diskography.css.map */
