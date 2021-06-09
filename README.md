@@ -1,2 +1,2 @@
 # MusicBox
-victorious-pan.surge.sh
+http://victorious-pan.surge.sh/
