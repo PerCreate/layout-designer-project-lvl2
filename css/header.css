@@ -1,0 +1,246 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Medium.ttf);
+  src: url(../fonts/Roboto-Bold.ttf);
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+header .page-description form, header .page-description, header, body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font: 18px/1.5 "Roboto", sans-serif;
+  background-color: #08020d;
+  color: #cacaca;
+  flex-direction: column;
+}
+body a {
+  text-decoration: none;
+  color: #cacaca;
+}
+
+header {
+  width: 100%;
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 4.85vw;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+header h2 {
+  font-weight: bold;
+  font-size: 3.1vw;
+  line-height: 57px;
+  text-transform: uppercase;
+}
+header .page-description {
+  margin: 200px 0;
+  flex-direction: column;
+}
+header .page-description h1, header .page-description h2 {
+  margin: 0;
+}
+header .page-description span {
+  margin-top: 30px;
+  font-weight: 100;
+  font-size: 1.29vw;
+  font-style: normal;
+  line-height: 150%;
+}
+header .page-description form {
+  flex-wrap: wrap;
+  margin-top: 16px;
+  width: 570px;
+}
+header .page-description form input {
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+  width: 273px;
+  height: 50px;
+  padding: 16px 22px;
+  background-color: transparent;
+  border: 2px solid #CACACA;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+header .page-description form input::-moz-placeholder {
+  color: #FFFFFF;
+}
+header .page-description form input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+header .page-description form input::placeholder {
+  color: #FFFFFF;
+}
+header .page-description form button {
+  box-sizing: border-box;
+  width: 570px;
+  height: 57px;
+  background: #34C176;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+@media (min-width: 1237px) {
+  header .page-description h1 {
+    font-size: 60px;
+  }
+  header .page-description h2 {
+    font-size: 38px;
+  }
+  header .page-description span {
+    font-size: 16px;
+  }
+}
+@media (max-width: 975px) {
+  header nav {
+    flex-wrap: wrap;
+  }
+  header nav .logo {
+    margin-left: 40px;
+  }
+  header nav .menu {
+    margin-right: 40px;
+    flex: 0 0 0;
+    width: 310px;
+  }
+  header nav form {
+    padding: 0 38px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  header nav form input {
+    width: 310px;
+  }
+  header .page-description span {
+    text-align: center;
+    display: block;
+    width: 374px;
+    height: 49px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 618px) {
+  header nav {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    grid-gap: 30px;
+    flex-wrap: wrap;
+  }
+  header nav .logo {
+    margin-left: 60px;
+  }
+  header nav .menu {
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0 60px;
+    margin-right: 0;
+    flex: 1 0 0;
+    width: 450px;
+  }
+  header nav form {
+    padding: 0 60px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  header nav form input {
+    width: 100%;
+  }
+  header .page-description {
+    box-sizing: border-box;
+    padding: 0 60px 0 60px;
+    width: 100%;
+  }
+  header .page-description h1 {
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 30px;
+    line-height: 55px;
+  }
+  header .page-description h2 {
+    font-size: 18px;
+  }
+  header .page-description form {
+    width: 100%;
+  }
+  header .page-description form input {
+    width: 100%;
+  }
+}
+@media (max-width: 414px) {
+  html {
+    width: 414px;
+  }
+
+  body {
+    box-sizing: border-box;
+    width: 414px;
+  }
+
+  header {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  header nav {
+    width: 374px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    grid-gap: 18px;
+    -webkit-grid-gap: 18px;
+    flex-wrap: wrap;
+  }
+  header nav .logo {
+    margin-left: 0;
+  }
+  header nav .menu {
+    padding: 0;
+    flex: 1 0 100%;
+    display: block;
+  }
+  header nav .menu li {
+    line-height: 17px;
+  }
+  header nav form {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  header nav form input {
+    width: 100%;
+  }
+  header .page-description h1 {
+    width: 374px;
+    height: 90px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  header .page-description h2 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  header .page-description form {
+    width: 374px;
+    flex-wrap: wrap;
+  }
+  header .page-description form button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=header.css.map */

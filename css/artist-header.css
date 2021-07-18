@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Medium.ttf);
+  src: url(../fonts/Roboto-Bold.ttf);
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  background-image: url(../images/MortenHarket.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 4.85vw;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+header h2 {
+  font-weight: bold;
+  font-size: 3.1vw;
+  line-height: 57px;
+  text-transform: uppercase;
+}
+header .page-description {
+  padding: 0 0 223px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 235px;
+}
+header .page-description h1 {
+  margin: 0 0 16px 0;
+}
+header .page-description span {
+  font-size: 16px;
+  line-height: 150%;
+}
+header .page-description form {
+  margin-top: 48px;
+  display: flex;
+  grid-gap: 0 24px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+header .page-description form button {
+  padding: 20px 30px;
+  width: 200px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  grid-gap: 0 22px;
+  border-radius: 5px;
+  font-size: 12.8px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+header .page-description form button .icon {
+  width: 20px;
+  height: 20px;
+}
+header .page-description form button .player {
+  background-image: url(../images/play-button.svg);
+}
+header .page-description form button .heart {
+  background-image: url(../images/heart.svg);
+}
+header .page-description form .mix {
+  background: #5328A1;
+}
+header .page-description form .favorities {
+  background: #95390C;
+}
+
+@media (min-width: 1237px) {
+  header .page-description h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 975px) {
+  header .page-description {
+    box-sizing: border-box;
+    padding: 0 40px 223px;
+  }
+  header .page-description h1 {
+    font-size: 47px;
+  }
+}
+@media (max-width: 474px) {
+  header .page-description form {
+    width: 100%;
+    flex-wrap: wrap;
+    grid-gap: 24px;
+  }
+  header .page-description form button {
+    width: 100%;
+  }
+}
+@media (max-width: 414px) {
+  html {
+    width: 414px;
+  }
+
+  body {
+    box-sizing: border-box;
+    width: 414px;
+  }
+
+  header {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  header .page-description {
+    margin-top: 225px;
+    padding: 0 20px 224px;
+  }
+  header .page-description h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  header .page-description form button {
+    width: 200px;
+  }
+}/*# sourceMappingURL=artist-header.css.map */

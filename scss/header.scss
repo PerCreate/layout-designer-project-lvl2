@@ -1,0 +1,290 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Medium.ttf);
+    src: url(../fonts/Roboto-Bold.ttf);
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+%flex-element-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+%flex-element-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font: 18px/1.5 "Roboto", sans-serif;
+    background-color: #08020d;
+    color: #cacaca;
+    @extend %flex-element-space-between;
+    flex-direction: column;
+    a {
+        text-decoration: none;
+        color: #cacaca;
+    }
+}
+
+
+
+header {
+    width: 100%;
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    @extend %flex-element-space-between;
+    h1 {
+        font-weight: bold;
+        font-size: 4.85vw;
+        line-height: 90px;
+        text-transform: uppercase;
+    }
+    
+    h2 {
+        font-weight: bold;
+        font-size: 3.1vw;;
+        line-height: 57px;
+        text-transform: uppercase;
+    }
+    
+    .page-description {
+        margin: 200px 0;
+        flex-direction: column;
+        @extend %flex-element-space-between;
+
+        h1,h2 {
+            margin: 0;
+        }
+
+        span {
+            margin-top: 30px;
+            font-weight: 100;
+            font-size: 1.29vw;
+            font-style: normal;
+            line-height: 150%;
+        }
+
+        form {
+            @extend %flex-element-space-between;
+            flex-wrap: wrap;
+            margin-top: 16px;
+            width: 570px;
+
+            input {
+                margin-bottom: 1.5rem;
+                box-sizing: border-box;
+                width: 273px;
+                height: 50px;
+                padding: 16px 22px;
+                background-color: transparent;
+                border: 2px solid #CACACA;
+                border-radius: 3px;
+                color: #FFFFFF;
+                font-size: 14px;
+            }
+            input::placeholder {
+                color: #FFFFFF;
+            }
+
+            button {
+                box-sizing: border-box;
+                width: 570px;
+                height: 57px;
+                background: #34C176;
+                border-radius: 5px;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (min-width:1237px) {
+    header {
+        .page-description {
+            h1 {
+                font-size: 60px;
+            }
+            h2 {
+                font-size: 38px;
+            }
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width:975px) {
+    header {
+        nav {
+            flex-wrap: wrap;
+
+            .logo {
+                margin-left: 40px;
+            }
+            .menu {
+                margin-right: 40px;
+                flex:0 0 0;
+                width: 310px;
+            }
+
+            form {
+                padding: 0 38px;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+
+                input {
+                    width: 310px;
+                }
+            }
+        }
+        .page-description {
+
+            span {
+                text-align: center;
+                display: block;
+                width: 374px;
+                height: 49px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width:618px) {
+    header {
+        nav {
+            height: fit-content;
+            grid-gap: 30px;
+            flex-wrap: wrap;
+
+            .logo {
+                margin-left: 60px;
+            }
+            .menu {
+                box-sizing: border-box;
+                justify-content: space-between;
+                padding: 0 60px;
+                margin-right: 0;
+                flex:1 0 0;
+                width: 450px;
+            }
+
+            form {
+                padding: 0 60px;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+
+        .page-description {
+            box-sizing: border-box;
+            padding: 0 60px 0 60px;
+            width: 100%;
+            
+            h1 {
+                text-align: center;
+                display: block;
+                width: 100%;
+                font-size: 30px;
+                line-height: 55px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+
+            form {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:414px) {
+    html {
+        width: 414px;
+    }
+    body {
+        box-sizing: border-box;
+        width: 414px;
+    }
+    header {
+        box-sizing:border-box;
+        width: 100%;
+
+        nav {
+            width: 374px;
+            height: fit-content;
+            grid-gap: 18px;
+            -webkit-grid-gap: 18px;
+            flex-wrap: wrap;
+
+            .logo {
+                margin-left: 0;
+            }
+            .menu {
+                padding: 0;
+                flex: 1 0 100%;
+                display: block;
+
+                li {
+                    line-height: 17px;
+                }
+            }
+
+            form {
+                padding: 0;
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+
+        .page-description {
+
+            h1 {
+                width: 374px;
+                height: 90px;
+                font-size: 30px;
+                line-height: 45px;
+            }
+
+            h2 {
+                font-size: 18px;
+                line-height: 27px;
+            }
+
+            form {
+                width: 374px;
+                flex-wrap: wrap;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

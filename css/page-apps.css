@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Medium.ttf);
+  src: url(../fonts/Roboto-Bold.ttf);
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+main .page-app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .page-app {
+  width: 100%;
+  padding: 100px 0;
+  max-width: 1200px;
+}
+main .page-app h2 {
+  margin: 0;
+}
+main .page-app .text {
+  margin-top: 48px;
+  width: 100%;
+}
+main .page-app .text span {
+  display: inline-block;
+  margin-top: 16px;
+  width: 600px;
+  font-size: 16px;
+  line-height: 150%;
+}
+main .page-app .text img {
+  float: right;
+}
+main .page-app .text form {
+  margin-top: 16px;
+  width: 100%;
+}
+main .page-app .text form button {
+  font-size: 12.8px;
+  line-height: 150%;
+  color: #FFFFFF;
+  width: 131px;
+  height: 53px;
+  background: #95390C;
+  border-radius: 32px;
+}
+
+@media (max-width: 975px) {
+  main .page-app {
+    box-sizing: border-box;
+    padding: 100px 60px;
+  }
+  main .page-app .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    grid-gap: 80px 0;
+  }
+  main .page-app .text span {
+    display: block;
+    width: 574px;
+    text-align: center;
+  }
+  main .page-app .text img {
+    float: none;
+  }
+}
+@media (max-width: 618px) {
+  main .page-app .text span {
+    width: 100%;
+  }
+}
+@media (max-width: 414px) {
+  main .page-app {
+    padding: 100px 20px;
+  }
+  main .page-app h2 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  main .page-app .text {
+    grid-gap: 16px 0;
+  }
+}/*# sourceMappingURL=page-apps.css.map */
